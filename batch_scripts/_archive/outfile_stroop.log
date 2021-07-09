@@ -1,0 +1,1670 @@
+
+SETUP SCRIPT	:	:/home/ccp_hcp/CCP_HCP/source_ccp/setup/setup_hcp.sh
+
+Sourcing environment for HCP Pipelines... ... ...
+PYTHON version	:	/home/ccp_hcp/ccp_virtualpython/ccp_mod/bin/python
+FSLDIR		:	/export/fsl-5.0.6tb
+FREESURFER	:	/export/freesurfer-5.3-HCP
+PATH [ATTENTION]	:	/export/freesurfer-5.3-HCP/bin:/export/freesurfer-5.3-HCP/fsfast/bin:/export/freesurfer-5.3-HCP/tktools:/export/fsl-5.0.6tb/bin:/export/freesurfer-5.3-HCP/mni/bin:/home/ccp_hcp/ccp_virtualpython/ccp_mod/bin:/export/fsl-5.0.6tb/bin:/home/ccp_hcp/ccp_virtualpython/ccp_mod/bin:/home/ccp_hcp/ccp_virtualpython/bin:/export/fsl-5.0.6tb/bin:/home/ccp_hcp/ccp_virtualpython/ccp_mod/bin:/home/ccp_hcp/ccp_virtualpython/bin:/usr/lib64/qt-3.3/bin:/export/openmpi-1.4.3/bin:/usr/kerberos/bin:/usr/local/bin:/bin:/usr/bin:/export/gromacs-4.5.3/bin/:/export/intel/composer_xe_2013.1.117/bin/intel64:/export/git-1.7.4.1/bin:/home/ccp_hcp/CCP_HCP/source_hcp/installed/workbench/bin_rh_linux64:/export/MRIcron/dcm2nii:/home/ccp_hcp/bin:/export/gromacs-4.5.3/bin/:/export/intel/composer_xe_2013.1.117/bin/intel64:/export/git-1.7.4.1/bin:/home/ccp_hcp/CCP_HCP/source_hcp/installed/workbench/bin_rh_linux64:/export/MRIcron/dcm2nii:/home/ccp_hcp/bin:/home/ccp_hcp/CCP_HCP/source_hcp/workbench/bin_rh_linux64
+
+CONFIG FILE	:	./stroop005.cfg
+STUDY FOLDER	:	/BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI
+SUBJ LIST	:	ST005
+PRINTCOM	:	
+ST005
+  tfMRI_BOLD1_RL
+Tue Sep 1 12:57:46 CDT 2015 - GenericfMRIVolumeProcessingPipeline.sh - Parsing Command Line Options
+Tue Sep 1 12:57:47 CDT 2015 - GenericfMRIVolumeProcessingPipeline.sh - mkdir /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD1_RL
+Tue Sep 1 12:57:51 CDT 2015 - GenericfMRIVolumeProcessingPipeline.sh - Gradient Distortion Correction of fMRI
+Tue Sep 1 12:57:51 CDT 2015 - GenericfMRIVolumeProcessingPipeline.sh - mkdir -p /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD1_RL/GradientDistortionUnwarp
+ 
+ START: GradientDistortionUnwarp
+. . . . . . . . . 10 . . . . . . . . . 20 . . . . . . . . . 30 . . . . . . . . . 40 . . . . . . . . . 50 . . . . . . . . . 60 . . . . . . . . . 70 . .
+set -- --path=/BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI
+       --subject=ST005
+       --fmriname=tfMRI_BOLD1_RL
+       --fmritcs=/BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/unprocessed/3T/tfMRI_BOLD1_RL/ST005_3T_tfMRI_BOLD1_RL.nii.gz
+       --fmriscout=/BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/unprocessed/3T/tfMRI_BOLD1_RL/ST005_3T_tfMRI_BOLD1_RL_SBRef.nii.gz
+       --SEPhaseNeg=/BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/unprocessed/3T/tfMRI_BOLD1_RL/ST005_3T_SpinEchoFieldMap_LR.nii.gz
+       --SEPhasePos=/BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/unprocessed/3T/tfMRI_BOLD1_RL/ST005_3T_SpinEchoFieldMap_RL.nii.gz
+       --fmapmag=NONE
+       --fmapphase=NONE
+       --echospacing=0.000580002668012
+       --echodiff=NONE NONE
+       --unwarpdir=x
+       --fmrires=2
+       --dcmethod=TOPUP
+       --gdcoeffs=/home/ccp_hcp/CCP_HCP/source_hcp/Pipelines-master/global/config/coeff_SC72C_Skyra.grad
+       --topupconfig=/home/ccp_hcp/CCP_HCP/source_hcp/Pipelines-master/global/config/b02b0.cnf
+       --printcom=
+. /home/ccp_hcp/CCP_HCP/source_ccp/setup/setup_hcp.sh
+  tfMRI_BOLD1_LR
+Tue Sep 1 13:09:18 CDT 2015 - GenericfMRIVolumeProcessingPipeline.sh - Parsing Command Line Options
+Tue Sep 1 13:09:19 CDT 2015 - GenericfMRIVolumeProcessingPipeline.sh - mkdir /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD1_LR
+Tue Sep 1 13:09:23 CDT 2015 - GenericfMRIVolumeProcessingPipeline.sh - Gradient Distortion Correction of fMRI
+Tue Sep 1 13:09:23 CDT 2015 - GenericfMRIVolumeProcessingPipeline.sh - mkdir -p /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD1_LR/GradientDistortionUnwarp
+ 
+ START: GradientDistortionUnwarp
+. . . . . . . . . 10 . . . . . . . . . 20 . . . . . . . . . 30 . . . . . . . . . 40 . . . . . . . . . 50 . . . . . . . . . 60 . . . . . . . . . 70 . .
+set -- --path=/BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI
+       --subject=ST005
+       --fmriname=tfMRI_BOLD1_LR
+       --fmritcs=/BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/unprocessed/3T/tfMRI_BOLD1_LR/ST005_3T_tfMRI_BOLD1_LR.nii.gz
+       --fmriscout=/BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/unprocessed/3T/tfMRI_BOLD1_LR/ST005_3T_tfMRI_BOLD1_LR_SBRef.nii.gz
+       --SEPhaseNeg=/BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/unprocessed/3T/tfMRI_BOLD1_LR/ST005_3T_SpinEchoFieldMap_LR.nii.gz
+       --SEPhasePos=/BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/unprocessed/3T/tfMRI_BOLD1_LR/ST005_3T_SpinEchoFieldMap_RL.nii.gz
+       --fmapmag=NONE
+       --fmapphase=NONE
+       --echospacing=0.000580002668012
+       --echodiff=NONE NONE
+       --unwarpdir=x-
+       --fmrires=2
+       --dcmethod=TOPUP
+       --gdcoeffs=/home/ccp_hcp/CCP_HCP/source_hcp/Pipelines-master/global/config/coeff_SC72C_Skyra.grad
+       --topupconfig=/home/ccp_hcp/CCP_HCP/source_hcp/Pipelines-master/global/config/b02b0.cnf
+       --printcom=
+. /home/ccp_hcp/CCP_HCP/source_ccp/setup/setup_hcp.sh
+  tfMRI_BOLD2_RL
+Tue Sep 1 13:20:47 CDT 2015 - GenericfMRIVolumeProcessingPipeline.sh - Parsing Command Line Options
+Tue Sep 1 13:20:47 CDT 2015 - GenericfMRIVolumeProcessingPipeline.sh - mkdir /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD2_RL
+Tue Sep 1 13:20:52 CDT 2015 - GenericfMRIVolumeProcessingPipeline.sh - Gradient Distortion Correction of fMRI
+Tue Sep 1 13:20:52 CDT 2015 - GenericfMRIVolumeProcessingPipeline.sh - mkdir -p /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD2_RL/GradientDistortionUnwarp
+ 
+ START: GradientDistortionUnwarp
+. . . . . . . . . 10 . . . . . . . . . 20 . . . . . . . . . 30 . . . . . . . . . 40 . . . . . . . . . 50 . . . . . . . . . 60 . . . . . . . . . 70 . .
+set -- --path=/BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI
+       --subject=ST005
+       --fmriname=tfMRI_BOLD2_RL
+       --fmritcs=/BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/unprocessed/3T/tfMRI_BOLD2_RL/ST005_3T_tfMRI_BOLD2_RL.nii.gz
+       --fmriscout=/BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/unprocessed/3T/tfMRI_BOLD2_RL/ST005_3T_tfMRI_BOLD2_RL_SBRef.nii.gz
+       --SEPhaseNeg=/BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/unprocessed/3T/tfMRI_BOLD2_RL/ST005_3T_SpinEchoFieldMap_LR.nii.gz
+       --SEPhasePos=/BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/unprocessed/3T/tfMRI_BOLD2_RL/ST005_3T_SpinEchoFieldMap_RL.nii.gz
+       --fmapmag=NONE
+       --fmapphase=NONE
+       --echospacing=0.000580002668012
+       --echodiff=NONE NONE
+       --unwarpdir=x
+       --fmrires=2
+       --dcmethod=TOPUP
+       --gdcoeffs=/home/ccp_hcp/CCP_HCP/source_hcp/Pipelines-master/global/config/coeff_SC72C_Skyra.grad
+       --topupconfig=/home/ccp_hcp/CCP_HCP/source_hcp/Pipelines-master/global/config/b02b0.cnf
+       --printcom=
+. /home/ccp_hcp/CCP_HCP/source_ccp/setup/setup_hcp.sh
+  tfMRI_BOLD2_LR
+Tue Sep 1 13:32:11 CDT 2015 - GenericfMRIVolumeProcessingPipeline.sh - Parsing Command Line Options
+Tue Sep 1 13:32:11 CDT 2015 - GenericfMRIVolumeProcessingPipeline.sh - mkdir /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD2_LR
+Tue Sep 1 13:32:16 CDT 2015 - GenericfMRIVolumeProcessingPipeline.sh - Gradient Distortion Correction of fMRI
+Tue Sep 1 13:32:16 CDT 2015 - GenericfMRIVolumeProcessingPipeline.sh - mkdir -p /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD2_LR/GradientDistortionUnwarp
+ 
+ START: GradientDistortionUnwarp
+. . . . . . . . . 10 . . . . . . . . . 20 . . . . . . . . . 30 . . . . . . . . . 40 . . . . . . . . . 50 . . . . . . . . . 60 . . . . . . . . . 70 . .
+set -- --path=/BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI
+       --subject=ST005
+       --fmriname=tfMRI_BOLD2_LR
+       --fmritcs=/BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/unprocessed/3T/tfMRI_BOLD2_LR/ST005_3T_tfMRI_BOLD2_LR.nii.gz
+       --fmriscout=/BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/unprocessed/3T/tfMRI_BOLD2_LR/ST005_3T_tfMRI_BOLD2_LR_SBRef.nii.gz
+       --SEPhaseNeg=/BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/unprocessed/3T/tfMRI_BOLD2_LR/ST005_3T_SpinEchoFieldMap_LR.nii.gz
+       --SEPhasePos=/BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/unprocessed/3T/tfMRI_BOLD2_LR/ST005_3T_SpinEchoFieldMap_RL.nii.gz
+       --fmapmag=NONE
+       --fmapphase=NONE
+       --echospacing=0.000580002668012
+       --echodiff=NONE NONE
+       --unwarpdir=x-
+       --fmrires=2
+       --dcmethod=TOPUP
+       --gdcoeffs=/home/ccp_hcp/CCP_HCP/source_hcp/Pipelines-master/global/config/coeff_SC72C_Skyra.grad
+       --topupconfig=/home/ccp_hcp/CCP_HCP/source_hcp/Pipelines-master/global/config/b02b0.cnf
+       --printcom=
+. /home/ccp_hcp/CCP_HCP/source_ccp/setup/setup_hcp.sh
+  tfMRI_BOLD3_RL
+Tue Sep 1 13:43:25 CDT 2015 - GenericfMRIVolumeProcessingPipeline.sh - Parsing Command Line Options
+Tue Sep 1 13:43:25 CDT 2015 - GenericfMRIVolumeProcessingPipeline.sh - mkdir /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL
+Tue Sep 1 13:43:29 CDT 2015 - GenericfMRIVolumeProcessingPipeline.sh - Gradient Distortion Correction of fMRI
+Tue Sep 1 13:43:29 CDT 2015 - GenericfMRIVolumeProcessingPipeline.sh - mkdir -p /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/GradientDistortionUnwarp
+ 
+ START: GradientDistortionUnwarp
+. . . . . . . . . 10 . . . . . . . . . 20 . . . . . . . . . 30 . . . . . . . . . 40 . . . . . . . . . 50 . . . . . . . . . 60 . . . . . . . . . 70 . .
+ 
+ END: GradientDistortionUnwarp
+Tue Sep 1 13:59:15 CDT 2015 - GenericfMRIVolumeProcessingPipeline.sh - mkdir -p /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/Scout_GradientDistortionUnwarp
+ 
+ START: GradientDistortionUnwarp
+. . . . . . . . . 10 . . . . . . . . . 20 . . . . . . . . . 30 . . . . . . . . . 40 . . . . . . . . . 50 . . . . . . . . . 60 . . . . . . . . . 70 . .
+ 
+ END: GradientDistortionUnwarp
+Tue Sep 1 13:59:44 CDT 2015 - GenericfMRIVolumeProcessingPipeline.sh - mkdir -p /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased
+Tue Sep 1 13:59:44 CDT 2015 - MotionCorrection_FLIRTBased.sh - START
+Tue Sep 1 13:59:44 CDT 2015 - MotionCorrection_FLIRTBased.sh - Do motion correction
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0000
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0001
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0002
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0003
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0004
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0005
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0006
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0007
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0008
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0009
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0010
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0011
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0012
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0013
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0014
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0015
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0016
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0017
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0018
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0019
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0020
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0021
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0022
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0023
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0024
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0025
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0026
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0027
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0028
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0029
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0030
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0031
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0032
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0033
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0034
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0035
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0036
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0037
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0038
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0039
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0040
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0041
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0042
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0043
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0044
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0045
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0046
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0047
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0048
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0049
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0050
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0051
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0052
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0053
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0054
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0055
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0056
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0057
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0058
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0059
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0060
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0061
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0062
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0063
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0064
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0065
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0066
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0067
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0068
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0069
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0070
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0071
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0072
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0073
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0074
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0075
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0076
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0077
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0078
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0079
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0080
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0081
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0082
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0083
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0084
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0085
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0086
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0087
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0088
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0089
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0090
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0091
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0092
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0093
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0094
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0095
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0096
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0097
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0098
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0099
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0100
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0101
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0102
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0103
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0104
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0105
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0106
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0107
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0108
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0109
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0110
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0111
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0112
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0113
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0114
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0115
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0116
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0117
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0118
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0119
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0120
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0121
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0122
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0123
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0124
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0125
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0126
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0127
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0128
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0129
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0130
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0131
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0132
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0133
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0134
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0135
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0136
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0137
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0138
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0139
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0140
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0141
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0142
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0143
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0144
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0145
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0146
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0147
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0148
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0149
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0150
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0151
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0152
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0153
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0154
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0155
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0156
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0157
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0158
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0159
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0160
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0161
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0162
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0163
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0164
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0165
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0166
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0167
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0168
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0169
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0170
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0171
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0172
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0173
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0174
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0175
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0176
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0177
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0178
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0179
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0180
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0181
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0182
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0183
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0184
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0185
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0186
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0187
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0188
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0189
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0190
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0191
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0192
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0193
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0194
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0195
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0196
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0197
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0198
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0199
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0200
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0201
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0202
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0203
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0204
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0205
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0206
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0207
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0208
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0209
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0210
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0211
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0212
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0213
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0214
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0215
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0216
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0217
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0218
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0219
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0220
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0221
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0222
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0223
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0224
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0225
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0226
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0227
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0228
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0229
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0230
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0231
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0232
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0233
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0234
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0235
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0236
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0237
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0238
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0239
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0240
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0241
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0242
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0243
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0244
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0245
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0246
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0247
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0248
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0249
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0250
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0251
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0252
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0253
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0254
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0255
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0256
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0257
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0258
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0259
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0260
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0261
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0262
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0263
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0264
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0265
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0266
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0267
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0268
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0269
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0270
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0271
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0272
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0273
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0274
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0275
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0276
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0277
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0278
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0279
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0280
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0281
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0282
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0283
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0284
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0285
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0286
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0287
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0288
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0289
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0290
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0291
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0292
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0293
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0294
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0295
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0296
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0297
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0298
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0299
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0300
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0301
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0302
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0303
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0304
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0305
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0306
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0307
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0308
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0309
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0310
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0311
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0312
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0313
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0314
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0315
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0316
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0317
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0318
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0319
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0320
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0321
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0322
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0323
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0324
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0325
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0326
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0327
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0328
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0329
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0330
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0331
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0332
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0333
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0334
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0335
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0336
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0337
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0338
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0339
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0340
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0341
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0342
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0343
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0344
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0345
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0346
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0347
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0348
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0349
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0350
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0351
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0352
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0353
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0354
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0355
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0356
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0357
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0358
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0359
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0360
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0361
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0362
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0363
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0364
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0365
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0366
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0367
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0368
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0369
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0370
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0371
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0372
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0373
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0374
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0375
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0376
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0377
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0378
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0379
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0380
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0381
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0382
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0383
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0384
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0385
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0386
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0387
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0388
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0389
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0390
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0391
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0392
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0393
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0394
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0395
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0396
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0397
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0398
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0399
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0400
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0401
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0402
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0403
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0404
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0405
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0406
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0407
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0408
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0409
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0410
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0411
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0412
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0413
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0414
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0415
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0416
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0417
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0418
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0419
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0420
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0421
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0422
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0423
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0424
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0425
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0426
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0427
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0428
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0429
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0430
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0431
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0432
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0433
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0434
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0435
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0436
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0437
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0438
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0439
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0440
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0441
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0442
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0443
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0444
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0445
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0446
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0447
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0448
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0449
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0450
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0451
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0452
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0453
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0454
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0455
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0456
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0457
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0458
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0459
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0460
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0461
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0462
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0463
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0464
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0465
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0466
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0467
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0468
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0469
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0470
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0471
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0472
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0473
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0474
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0475
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0476
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0477
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0478
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0479
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0480
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0481
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0482
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0483
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0484
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0485
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0486
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0487
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0488
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0489
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0490
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0491
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0492
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0493
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0494
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0495
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0496
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0497
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0498
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0499
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0500
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0501
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0502
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0503
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0504
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0505
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0506
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0507
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0508
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0509
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0510
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0511
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0512
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0513
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0514
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0515
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0516
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0517
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0518
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0519
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0520
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0521
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0522
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0523
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0524
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0525
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0526
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0527
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0528
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0529
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0530
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0531
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0532
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0533
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0534
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0535
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0536
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0537
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0538
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0539
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0540
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0541
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0542
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0543
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0544
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0545
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0546
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0547
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0548
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0549
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0550
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0551
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0552
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0553
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0554
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0555
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0556
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0557
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0558
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0559
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0560
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0561
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0562
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0563
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0564
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0565
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0566
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0567
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0568
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0569
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0570
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0571
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0572
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0573
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0574
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0575
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0576
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0577
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0578
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0579
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0580
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0581
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0582
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0583
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0584
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0585
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0586
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0587
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0588
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0589
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0590
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0591
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0592
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0593
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0594
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0595
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0596
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0597
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0598
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0599
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0600
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0601
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0602
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0603
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0604
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0605
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0606
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0607
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0608
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0609
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0610
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0611
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0612
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0613
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0614
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0615
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0616
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0617
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0618
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0619
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0620
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0621
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0622
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0623
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0624
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0625
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0626
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0627
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0628
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0629
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0630
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0631
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0632
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0633
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0634
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0635
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0636
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0637
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0638
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0639
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0640
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0641
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0642
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0643
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0644
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0645
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0646
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0647
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0648
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0649
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0650
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0651
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0652
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0653
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0654
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0655
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0656
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0657
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0658
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0659
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0660
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0661
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0662
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0663
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0664
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0665
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0666
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0667
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0668
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0669
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0670
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0671
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0672
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0673
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0674
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0675
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0676
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0677
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0678
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0679
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0680
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0681
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0682
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0683
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0684
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0685
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0686
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0687
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0688
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0689
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0690
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0691
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0692
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0693
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0694
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0695
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0696
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0697
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0698
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0699
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0700
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0701
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0702
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0703
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0704
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0705
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0706
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0707
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0708
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0709
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0710
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0711
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0712
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0713
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0714
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0715
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0716
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0717
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0718
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0719
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0720
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0721
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0722
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0723
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0724
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0725
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0726
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0727
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0728
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0729
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0730
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0731
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0732
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0733
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0734
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0735
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0736
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0737
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0738
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0739
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0740
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0741
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0742
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0743
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0744
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0745
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0746
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0747
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0748
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0749
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0750
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0751
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0752
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0753
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0754
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0755
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0756
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0757
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0758
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0759
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0760
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0761
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0762
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0763
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0764
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0765
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0766
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0767
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0768
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0769
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0770
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0771
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0772
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0773
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0774
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0775
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0776
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0777
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0778
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0779
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0780
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0781
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0782
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0783
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0784
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0785
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0786
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0787
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0788
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0789
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0790
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0791
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0792
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0793
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0794
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0795
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0796
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0797
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0798
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0799
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0800
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0801
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0802
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0803
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0804
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0805
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0806
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0807
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0808
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0809
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0810
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0811
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0812
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0813
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0814
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0815
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0816
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0817
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0818
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0819
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0820
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0821
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0822
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0823
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0824
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0825
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0826
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0827
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0828
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0829
+processing /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/MotionCorrection_FLIRTbased/tfMRI_BOLD3_RL_mc_tmp0830
+Tue Sep 1 15:42:21 CDT 2015 - MotionCorrection_FLIRTBased.sh - Change names of all matrices in OutputMotionMatrixFolder
+Tue Sep 1 15:42:25 CDT 2015 - MotionCorrection_FLIRTBased.sh - Run the Derive function to generate appropriate regressors from the par file
+Tue Sep 1 15:43:57 CDT 2015 - MotionCorrection_FLIRTBased.sh - END
+Tue Sep 1 15:43:57 CDT 2015 - GenericfMRIVolumeProcessingPipeline.sh - EPI Distortion Correction and EPI to T1w Registration
+Tue Sep 1 15:43:57 CDT 2015 - GenericfMRIVolumeProcessingPipeline.sh - mkdir -p /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased
+Tue Sep 1 15:43:57 CDT 2015 - DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased.sh - START
+Tue Sep 1 15:43:58 CDT 2015 - TopupPreprocessingAll.sh - START: Topup Field Map Generation and Gradient Unwarping
+ 
+ START: GradientDistortionUnwarp
+. . . . . . . . . 10 . . . . . . . . . 20 . . . . . . . . . 30 . . . . . . . . . 40 . . . . . . . . . 50 . . . . . . . . . 60 . . . . . . . . . 70 . .
+ 
+ END: GradientDistortionUnwarp
+ 
+ START: GradientDistortionUnwarp
+. . . . . . . . . 10 . . . . . . . . . 20 . . . . . . . . . 30 . . . . . . . . . 40 . . . . . . . . . 50 . . . . . . . . . 60 . . . . . . . . . 70 . .
+ 
+ END: GradientDistortionUnwarp
+Tue Sep 1 15:45:20 CDT 2015 - TopupPreprocessingAll.sh - Total readout time is .051620237453068 secs
+SSD = 539.996	n = 76500	Reg = 0	Cost = 539.996
+SSD = 402.544	n = 76500	Reg = 20.9692	Cost = 423.514
+SSD = 336.636	n = 76500	Reg = 44.1207	Cost = 380.757
+SSD = 312.969	n = 76159	Reg = 57.1558	Cost = 370.125
+SSD = 303.788	n = 75872	Reg = 63.031	Cost = 366.819
+SSD = 299.888	n = 75724	Reg = 65.4746	Cost = 365.362
+***Going to next resolution level***
+SSD = 471.095	n = 75724	Reg = 24.3337	Cost = 495.429
+SSD = 341.603	n = 75752	Reg = 52.3806	Cost = 393.983
+SSD = 287.776	n = 75811	Reg = 72.1097	Cost = 359.886
+SSD = 267.217	n = 75821	Reg = 82.2279	Cost = 349.445
+SSD = 258.924	n = 75864	Reg = 86.82	Cost = 345.744
+SSD = 255.536	n = 75873	Reg = 88.8437	Cost = 344.379
+***Going to next resolution level***
+SSD = 536.784	n = 75873	Reg = 18.667	Cost = 555.451
+SSD = 388.67	n = 76079	Reg = 42.6805	Cost = 431.35
+SSD = 330.486	n = 76350	Reg = 59.7976	Cost = 390.283
+SSD = 308.533	n = 76500	Reg = 68.0978	Cost = 376.63
+SSD = 299.565	n = 76500	Reg = 71.8378	Cost = 371.403
+SSD = 295.176	n = 76500	Reg = 73.5565	Cost = 368.733
+***Going to next resolution level***
+SSD = 434.158	n = 76500	Reg = 22.1682	Cost = 456.327
+SSD = 301.284	n = 76500	Reg = 28.8962	Cost = 330.18
+SSD = 262.496	n = 76500	Reg = 39.5596	Cost = 302.056
+SSD = 251.622	n = 76500	Reg = 43.9962	Cost = 295.618
+SSD = 247.363	n = 76500	Reg = 45.6904	Cost = 293.054
+SSD = 245.235	n = 76500	Reg = 46.475	Cost = 291.71
+***Going to next resolution level***
+SSD = 245.289	n = 76500	Reg = 15.5138	Cost = 260.803
+SSD = 230.819	n = 76500	Reg = 20.5613	Cost = 251.381
+SSD = 223.655	n = 76500	Reg = 23.9869	Cost = 247.642
+SSD = 220.977	n = 76500	Reg = 25.3	Cost = 246.277
+SSD = 219.847	n = 76500	Reg = 25.8361	Cost = 245.683
+SSD = 219.249	n = 76500	Reg = 26.1202	Cost = 245.369
+***Going to next resolution level***
+SSD = 437.501	n = 630034	Reg = 67.358	Cost = 504.859
+SSD = 433.914	n = 630034	Reg = 66.791	Cost = 500.705
+SSD = 427.482	n = 630034	Reg = 65.7764	Cost = 493.259
+SSD = 416.871	n = 630034	Reg = 64.1088	Cost = 480.98
+SSD = 401.1	n = 630034	Reg = 61.6488	Cost = 462.749
+SSD = 379.435	n = 630034	Reg = 58.3182	Cost = 437.753
+SSD = 351.551	n = 630034	Reg = 54.1464	Cost = 405.698
+SSD = 320.075	n = 630034	Reg = 49.677	Cost = 369.752
+SSD = 305.723	n = 630034	Reg = 47.7756	Cost = 353.498
+SSD = 279.876	n = 630034	Reg = 44.742	Cost = 324.617
+SSD = 262.731	n = 630034	Reg = 43.2403	Cost = 305.971
+***Going to next resolution level***
+SSD = 401.117	n = 630034	Reg = 12.1764	Cost = 413.293
+SSD = 399.351	n = 630034	Reg = 12.1257	Cost = 411.477
+SSD = 396.164	n = 630034	Reg = 12.0349	Cost = 408.199
+SSD = 390.788	n = 630034	Reg = 11.8836	Cost = 402.671
+SSD = 382.288	n = 630034	Reg = 11.6497	Cost = 393.938
+SSD = 369.123	n = 630034	Reg = 11.3	Cost = 380.424
+SSD = 349.844	n = 630034	Reg = 10.8139	Cost = 360.658
+SSD = 325	n = 630034	Reg = 10.2394	Cost = 335.239
+SSD = 313.29	n = 630034	Reg = 10.0175	Cost = 323.307
+SSD = 284.879	n = 630034	Reg = 9.519	Cost = 294.398
+SSD = 268.735	n = 630034	Reg = 9.3623	Cost = 278.097
+***Going to next resolution level***
+SSD = 268.797	n = 630034	Reg = 0.0936445	Cost = 268.89
+SSD = 268.239	n = 630034	Reg = 0.0934677	Cost = 268.332
+SSD = 267.387	n = 630034	Reg = 0.0932044	Cost = 267.48
+SSD = 266.3	n = 630034	Reg = 0.0928884	Cost = 266.393
+SSD = 265.078	n = 630034	Reg = 0.0925848	Cost = 265.171
+SSD = 263.216	n = 630034	Reg = 0.0922256	Cost = 263.308
+SSD = 259.706	n = 630034	Reg = 0.0916253	Cost = 259.797
+SSD = 255.354	n = 630034	Reg = 0.0910726	Cost = 255.445
+SSD = 250.493	n = 630034	Reg = 0.0905342	Cost = 250.583
+SSD = 239.382	n = 630034	Reg = 0.089779	Cost = 239.472
+SSD = 230.225	n = 630034	Reg = 0.0899793	Cost = 230.315
+SSD = 216.189	n = 630034	Reg = 0.0922263	Cost = 216.281
+SSD = 209.06	n = 630034	Reg = 0.0957504	Cost = 209.156
+SSD = 203.619	n = 630034	Reg = 0.101753	Cost = 203.721
+SSD = 201.313	n = 630034	Reg = 0.106193	Cost = 201.419
+SSD = 198.527	n = 630034	Reg = 0.112646	Cost = 198.639
+SSD = 196.555	n = 630034	Reg = 0.117621	Cost = 196.673
+SSD = 194.002	n = 630034	Reg = 0.123934	Cost = 194.126
+SSD = 192.115	n = 630034	Reg = 0.128571	Cost = 192.243
+SSD = 189.954	n = 630034	Reg = 0.133518	Cost = 190.088
+SSD = 188.298	n = 630034	Reg = 0.137188	Cost = 188.435
+***Going to next resolution level***
+SSD = 188.298	n = 630034	Reg = 0.00274376	Cost = 188.301
+SSD = 188.207	n = 630034	Reg = 0.00274203	Cost = 188.21
+SSD = 188.053	n = 630034	Reg = 0.00273898	Cost = 188.055
+SSD = 187.806	n = 630034	Reg = 0.00273387	Cost = 187.809
+SSD = 187.401	n = 630034	Reg = 0.00272494	Cost = 187.404
+SSD = 186.626	n = 630034	Reg = 0.00270728	Cost = 186.628
+SSD = 185.225	n = 630034	Reg = 0.00267504	Cost = 185.228
+SSD = 183.174	n = 630034	Reg = 0.00262642	Cost = 183.177
+SSD = 181.972	n = 630034	Reg = 0.00259644	Cost = 181.975
+SSD = 177.599	n = 630034	Reg = 0.00249074	Cost = 177.601
+SSD = 175.389	n = 630034	Reg = 0.0024328	Cost = 175.391
+SSD = 170.95	n = 630034	Reg = 0.00231349	Cost = 170.952
+SSD = 169.505	n = 630034	Reg = 0.00226849	Cost = 169.508
+SSD = 168.019	n = 630034	Reg = 0.00221568	Cost = 168.021
+SSD = 167.592	n = 630034	Reg = 0.00219908	Cost = 167.594
+SSD = 166.976	n = 630034	Reg = 0.00217922	Cost = 166.978
+SSD = 166.65	n = 630034	Reg = 0.00217434	Cost = 166.652
+SSD = 166.036	n = 630034	Reg = 0.00217576	Cost = 166.038
+SSD = 165.665	n = 630034	Reg = 0.00218578	Cost = 165.668
+SSD = 164.93	n = 630034	Reg = 0.00222018	Cost = 164.932
+SSD = 164.46	n = 630034	Reg = 0.00225433	Cost = 164.462
+SSD = 163.67	n = 630034	Reg = 0.00232738	Cost = 163.673
+SSD = 163.077	n = 630034	Reg = 0.00239219	Cost = 163.08
+SSD = 162.258	n = 630034	Reg = 0.00249452	Cost = 162.26
+SSD = 161.556	n = 630034	Reg = 0.00259646	Cost = 161.559
+SSD = 160.785	n = 630034	Reg = 0.0027181	Cost = 160.788
+SSD = 160.036	n = 630034	Reg = 0.00284634	Cost = 160.039
+SSD = 159.263	n = 630034	Reg = 0.00297644	Cost = 159.266
+SSD = 158.502	n = 630034	Reg = 0.00310677	Cost = 158.505
+SSD = 157.703	n = 630034	Reg = 0.00324817	Cost = 157.706
+SSD = 157.023	n = 630034	Reg = 0.00337662	Cost = 157.026
+SSD = 156.324	n = 630034	Reg = 0.0034977	Cost = 156.328
+SSD = 155.671	n = 630034	Reg = 0.00361356	Cost = 155.674
+SSD = 155.119	n = 630034	Reg = 0.00370645	Cost = 155.122
+SSD = 154.56	n = 630034	Reg = 0.00379651	Cost = 154.564
+SSD = 154.066	n = 630034	Reg = 0.00387382	Cost = 154.07
+SSD = 153.605	n = 630034	Reg = 0.00394341	Cost = 153.609
+SSD = 153.167	n = 630034	Reg = 0.0040061	Cost = 153.171
+SSD = 152.756	n = 630034	Reg = 0.00406239	Cost = 152.76
+SSD = 152.341	n = 630034	Reg = 0.00411278	Cost = 152.345
+SSD = 151.933	n = 630034	Reg = 0.00415991	Cost = 151.937
+SSD = 151.53	n = 630034	Reg = 0.00420455	Cost = 151.534
+SSD = 151.17	n = 630034	Reg = 0.00424111	Cost = 151.174
+SSD = 150.778	n = 630034	Reg = 0.00427653	Cost = 150.782
+SSD = 150.402	n = 630034	Reg = 0.00430769	Cost = 150.406
+SSD = 150.024	n = 630034	Reg = 0.0043359	Cost = 150.029
+SSD = 149.637	n = 630034	Reg = 0.00436155	Cost = 149.641
+SSD = 149.265	n = 630034	Reg = 0.00438403	Cost = 149.269
+SSD = 148.867	n = 630034	Reg = 0.00440518	Cost = 148.872
+SSD = 148.495	n = 630034	Reg = 0.00442203	Cost = 148.5
+SSD = 148.068	n = 630034	Reg = 0.00444056	Cost = 148.072
+Tue Sep 1 16:19:59 CDT 2015 - TopupPreprocessingAll.sh - END: Topup Field Map Generation and Gradient Unwarping
+Tue Sep 1 16:19:59 CDT 2015 - DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased.sh - create a spline interpolated image of scout (distortion corrected in same space)
+Tue Sep 1 16:20:00 CDT 2015 - DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased.sh - register undistorted scout image to T1w
+Running FAST segmentation
+FLIRT pre-alignment
+Running BBR
+0.191360 0.999998 -0.001465 -0.001417 0.000000 0.001496 0.999763 0.021700 0.000000 0.001384 -0.021702 0.999764 0.000000 -0.443183 4.335603 0.057006 1.000000 
+Tue Sep 1 16:46:29 CDT 2015 - DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased.sh - generate combined warpfields and spline interpolated images and apply bias field correction
+Tue Sep 1 16:48:28 CDT 2015 - DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased.sh - do not apply Jacobian correction to scout image
+Tue Sep 1 16:48:34 CDT 2015 - DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased.sh - Check to see if FreeSurferNHP.sh was used
+Tue Sep 1 16:48:34 CDT 2015 - DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased.sh - /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/T1w/ST005_1mm does not exist. FreeSurferNHP.sh was not used.
+Tue Sep 1 16:48:34 CDT 2015 - DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased.sh - Run Normally
+Tue Sep 1 16:48:34 CDT 2015 - DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased.sh - Use "hidden" bbregister DOF options
+Log file is /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/EPItoT1w.dat.log
+Tue Sep  1 16:48:34 CDT 2015
+
+setenv SUBJECTS_DIR /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/T1w
+cd /home/ccp_hcp/CCP_HCP/source_ccp/batch_scripts
+/export/freesurfer-5.3-HCP/bin/bbregister --s ST005 --mov /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/Scout_gdc_undistorted2T1w_init.nii.gz --surf white.deformed --init-reg /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/T1w/ST005/mri/transforms/eye.dat --bold --reg /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/EPItoT1w.dat --6 --o /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/Scout_gdc_undistorted2T1w.nii.gz
+
+$Id: bbregister,v 1.49.2.3 2013/03/25 18:04:53 greve Exp $
+Linux node167 2.6.18-164.el5 #1 SMP Tue Aug 18 15:51:48 EDT 2009 x86_64 x86_64 x86_64 GNU/Linux
+FREESURFER_HOME /export/freesurfer-5.3-HCP
+mri_convert /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/Scout_gdc_undistorted2T1w_init.nii.gz /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/tmp.bbregister.23316/template.nii
+mri_convert /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/Scout_gdc_undistorted2T1w_init.nii.gz /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/tmp.bbregister.23316/template.nii 
+$Id: mri_convert.c,v 1.179.2.7 2012/09/05 21:55:16 mreuter Exp $
+reading from /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/Scout_gdc_undistorted2T1w_init.nii.gz...
+TR=720.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (-1, 0, 0)
+j_ras = (0, 1, 0)
+k_ras = (0, 0, 1)
+writing to /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/tmp.bbregister.23316/template.nii...
+mri_segreg --mov /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/tmp.bbregister.23316/template.nii --init-reg /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/T1w/ST005/mri/transforms/eye.dat --out-reg /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/tmp.bbregister.23316/bbr.pass1.dat --subsamp-brute 100 --subsamp 100 --tol 1e-4 --tol1d 1e-3 --brute -4 4 4 --surf white.deformed --gm-proj-frac 0.5 --gm-gt-wm 0.5
+$Id: mri_segreg.c,v 1.103.2.1 2011/10/07 19:14:42 greve Exp $
+setenv SUBJECTS_DIR /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/T1w
+cd /home/ccp_hcp/CCP_HCP/source_ccp/batch_scripts
+mri_segreg --mov /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/tmp.bbregister.23316/template.nii --init-reg /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/T1w/ST005/mri/transforms/eye.dat --out-reg /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/tmp.bbregister.23316/bbr.pass1.dat --subsamp-brute 100 --subsamp 100 --tol 1e-4 --tol1d 1e-3 --brute -4 4 4 --surf white.deformed --gm-proj-frac 0.5 --gm-gt-wm 0.5 
+sysname  Linux
+hostname node167
+machine  x86_64
+user     ccp_hcp
+movvol /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/tmp.bbregister.23316/template.nii
+regfile /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/T1w/ST005/mri/transforms/eye.dat
+subject ST005
+dof 6
+outregfile /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/tmp.bbregister.23316/bbr.pass1.dat
+UseMask 0
+UseLH 1
+UseRH 1
+nsubsamp 100
+PenaltySign  -1
+PenaltySlope 0.500000
+PenaltyCenter 0.000000
+surfname white.deformed
+GMProjFrac 0.500000
+WMProjAbs 2.000000
+lhcostfile (null)
+rhcostfile (null)
+interp  trilinear (1)
+frame  0
+TolPowell 0.000100
+nMaxItersPowell 36
+n1dmin  3
+Profile   0
+Gdiag_no  -1
+AddNoise  0 (0)
+SynthSeed 1441671544
+TransRandMax 0.000000
+RotRandMax 0.000000
+Translations 0.000000 0.000000 0.000000
+Rotations   0.000000 0.000000 0.000000
+Input reg
+ 1.000   0.000   0.000   0.000;
+ 0.000   1.000   0.000   0.000;
+ 0.000   0.000   1.000   0.000;
+ 0.000   0.000   0.000   1.000;
+
+Loading mov
+Projecting LH Surfs
+Loading lh.white.deformed surf
+Loading lh.thickness for GM
+GM Proj: 1 0.500000 2.000000
+WM Proj: 0 0.500000 2.000000
+Projecting RH Surfs
+Loading rh.white.deformed surf
+Loading rh.thickness
+Projecting RH Surfs
+Computing relative cost
+ 0  -25.0 -25.0 -25.0   0.983723
+ 1  -25.0 -25.0  25.0   1.032478
+ 2  -25.0  25.0 -25.0   0.997705
+ 3  -25.0  25.0  25.0   1.018454
+ 4   25.0 -25.0 -25.0   0.999718
+ 5   25.0 -25.0  25.0   0.995111
+ 6   25.0  25.0 -25.0   1.017516
+ 7   25.0  25.0  25.0   1.011193
+REL:  8  0.180185    8.055898  1.006987 rel = 0.178935 
+Initial costs ----------------
+Number of surface hits 2670
+WM  Intensity  4831.3471 +/- 780.0116
+Ctx Intensity  6013.7312 +/- 990.1215
+Pct Contrast     21.2741 +/-  18.5665
+Cost   0.1802
+RelCost   0.1789
+
+------------------------------------
+Brute force preopt -4 4 4, n = 729
+     0  -4.0000  -4.0000  -4.0000  -4.0000  -4.0000  -4.0000      0.9853   0.9853  0.0
+     1  -4.0000  -4.0000  -4.0000  -4.0000  -4.0000   0.0000      0.9641   0.9641  0.0
+     2  -4.0000  -4.0000  -4.0000  -4.0000  -4.0000   4.0000      0.9578   0.9578  0.0
+     4  -4.0000  -4.0000  -4.0000  -4.0000   0.0000   0.0000      0.9533   0.9533  0.0
+     5  -4.0000  -4.0000  -4.0000  -4.0000   0.0000   4.0000      0.9505   0.9505  0.0
+     7  -4.0000  -4.0000  -4.0000  -4.0000   4.0000   0.0000      0.9196   0.9196  0.0
+    11  -4.0000  -4.0000  -4.0000   0.0000  -4.0000   4.0000      0.8982   0.8982  0.0
+    33  -4.0000  -4.0000   0.0000  -4.0000   4.0000  -4.0000      0.8816   0.8816  0.0
+    34  -4.0000  -4.0000   0.0000  -4.0000   4.0000   0.0000      0.8624   0.8624  0.0
+   118  -4.0000   0.0000   0.0000   0.0000  -4.0000   0.0000      0.8119   0.8119  0.0
+   274   0.0000  -4.0000   0.0000  -4.0000   0.0000   0.0000      0.7839   0.7839  0.0
+   355   0.0000   0.0000   0.0000  -4.0000   0.0000   0.0000      0.7087   0.7087  0.0
+   363   0.0000   0.0000   0.0000   0.0000   0.0000  -4.0000      0.6060   0.6060  0.0
+   364   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000      0.1802   0.1802  0.0
+Brute Force --------------------------
+Min cost was 0.180185
+Number of iterations   729
+Search time 2.782000 sec
+Parameters at best (transmm, rotdeg)
+  0.000   0.000   0.000  0.000  0.000  0.000 
+--------------------------------------------
+
+Starting Powell Minimization
+Init Powel Params dof = 6
+0 0
+1 0
+2 0
+3 0
+4 0
+5 0
+   7 -0.028  0.000  0.000  0.000  0.000  0.000   0.1799985876
+   8 -0.065  0.000  0.000  0.000  0.000  0.000   0.1795734450
+  10 -0.146  0.000  0.000  0.000  0.000  0.000   0.1788879258
+  12 -0.127  0.000  0.000  0.000  0.000  0.000   0.1788058443
+  14 -0.128  0.000  0.000  0.000  0.000  0.000   0.1788052356
+  23 -0.128  0.184  0.000  0.000  0.000  0.000   0.1760317489
+  25 -0.128  0.260  0.000  0.000  0.000  0.000   0.1750363946
+  27 -0.128  0.242  0.000  0.000  0.000  0.000   0.1748972537
+  29 -0.128  0.239  0.000  0.000  0.000  0.000   0.1748882954
+  30 -0.128  0.237  0.000  0.000  0.000  0.000   0.1748861092
+  31 -0.128  0.236  0.000  0.000  0.000  0.000   0.1748860145
+  39 -0.128  0.236  0.101  0.000  0.000  0.000   0.1745070774
+  40 -0.128  0.236  0.070  0.000  0.000  0.000   0.1743186065
+  41 -0.128  0.236  0.064  0.000  0.000  0.000   0.1743033941
+  42 -0.128  0.236  0.055  0.000  0.000  0.000   0.1742992248
+  43 -0.128  0.236  0.058  0.000  0.000  0.000   0.1742978063
+  44 -0.128  0.236  0.059  0.000  0.000  0.000   0.1742977504
+  52 -0.128  0.236  0.059  0.071  0.000  0.000   0.1739825002
+  56 -0.128  0.236  0.059  0.089  0.000  0.000   0.1739294675
+  57 -0.128  0.236  0.059  0.084  0.000  0.000   0.1738920026
+  58 -0.128  0.236  0.059  0.082  0.000  0.000   0.1738855398
+  68 -0.128  0.236  0.059  0.082  0.009  0.000   0.1737741666
+  69 -0.128  0.236  0.059  0.082  0.030  0.000   0.1736004107
+  71 -0.128  0.236  0.059  0.082  0.037  0.000   0.1735827520
+  72 -0.128  0.236  0.059  0.082  0.038  0.000   0.1735816261
+  83 -0.128  0.236  0.059  0.082  0.038 -0.024   0.1735240453
+  85 -0.128  0.236  0.059  0.082  0.038 -0.019   0.1735239151
+  86 -0.128  0.236  0.059  0.082  0.038 -0.021   0.1735226175
+  96 -0.040  0.236  0.059  0.082  0.038 -0.021   0.1727689036
+  98 -0.059  0.236  0.059  0.082  0.038 -0.021   0.1726914437
+ 101 -0.060  0.236  0.059  0.082  0.038 -0.021   0.1726901946
+ 102 -0.061  0.236  0.059  0.082  0.038 -0.021   0.1726891585
+ 104 -0.062  0.236  0.059  0.082  0.038 -0.021   0.1726888527
+ 112 -0.062  0.262  0.059  0.082  0.038 -0.021   0.1725628653
+ 114 -0.062  0.259  0.059  0.082  0.038 -0.021   0.1725612630
+ 124 -0.062  0.259  0.064  0.082  0.038 -0.021   0.1725278646
+ 125 -0.062  0.259  0.070  0.082  0.038 -0.021   0.1725167059
+ 136 -0.062  0.259  0.070  0.073  0.038 -0.021   0.1724398122
+ 137 -0.062  0.259  0.070  0.072  0.038 -0.021   0.1724384381
+ 145 -0.062  0.259  0.070  0.072  0.052 -0.021   0.1724343039
+ 146 -0.062  0.259  0.070  0.072  0.046 -0.021   0.1724254383
+ 148 -0.062  0.259  0.070  0.072  0.047 -0.021   0.1724251591
+ 156 -0.062  0.259  0.070  0.072  0.047  0.066   0.1721111785
+ 158 -0.062  0.259  0.070  0.072  0.047  0.178   0.1717797024
+ 162 -0.062  0.259  0.070  0.072  0.047  0.177   0.1717793449
+ 171 -0.012  0.259  0.070  0.072  0.047  0.177   0.1706885529
+ 173  0.009  0.259  0.070  0.072  0.047  0.177   0.1705726201
+ 175  0.008  0.259  0.070  0.072  0.047  0.177   0.1705720695
+ 185  0.008  0.249  0.070  0.072  0.047  0.177   0.1704201912
+ 186  0.008  0.214  0.070  0.072  0.047  0.177   0.1703190893
+ 188  0.008  0.226  0.070  0.072  0.047  0.177   0.1702565312
+ 197  0.008  0.226  0.090  0.072  0.047  0.177   0.1698299504
+ 199  0.008  0.226  0.108  0.072  0.047  0.177   0.1696848834
+ 200  0.008  0.226  0.113  0.072  0.047  0.177   0.1696782030
+ 204  0.008  0.226  0.114  0.072  0.047  0.177   0.1696778150
+ 213  0.008  0.226  0.114  0.115  0.047  0.177   0.1695222925
+ 214  0.008  0.226  0.114  0.102  0.047  0.177   0.1694247534
+ 215  0.008  0.226  0.114  0.098  0.047  0.177   0.1694175194
+ 216  0.008  0.226  0.114  0.097  0.047  0.177   0.1694164432
+ 217  0.008  0.226  0.114  0.096  0.047  0.177   0.1694157364
+ 228  0.008  0.226  0.114  0.096  0.093  0.177   0.1694112459
+ 230  0.008  0.226  0.114  0.096  0.070  0.177   0.1692770363
+ 241  0.008  0.226  0.114  0.096  0.070  0.226   0.1687123174
+ 242  0.008  0.226  0.114  0.096  0.070  0.238   0.1685302500
+ 243  0.008  0.226  0.114  0.096  0.070  0.270   0.1683410574
+ 244  0.008  0.226  0.114  0.096  0.070  0.269   0.1683247556
+ 245  0.008  0.226  0.114  0.096  0.070  0.260   0.1682863876
+ 257  0.013  0.226  0.114  0.096  0.070  0.260   0.1682790522
+ 258  0.012  0.226  0.114  0.096  0.070  0.260   0.1682785021
+ 267  0.012  0.221  0.114  0.096  0.070  0.260   0.1682373438
+ 269  0.012  0.216  0.114  0.096  0.070  0.260   0.1682184576
+ 270  0.012  0.215  0.114  0.096  0.070  0.260   0.1682183823
+ 280  0.012  0.215  0.129  0.096  0.070  0.260   0.1681544982
+ 281  0.012  0.215  0.126  0.096  0.070  0.260   0.1681471880
+ 292  0.012  0.215  0.126  0.092  0.070  0.260   0.1681237372
+ 293  0.012  0.215  0.126  0.089  0.070  0.260   0.1681153633
+ 294  0.012  0.215  0.126  0.088  0.070  0.260   0.1681150884
+ 304  0.012  0.215  0.126  0.088  0.082  0.260   0.1680711341
+ 306  0.012  0.215  0.126  0.088  0.081  0.260   0.1680708712
+ 321  0.012  0.215  0.126  0.088  0.081  0.266   0.1680662383
+ 322  0.012  0.215  0.126  0.088  0.081  0.264   0.1680643688
+ 333  0.017  0.215  0.126  0.088  0.081  0.264   0.1680575422
+ 334  0.016  0.215  0.126  0.088  0.081  0.264   0.1680574746
+ 345  0.016  0.212  0.126  0.088  0.081  0.264   0.1680569825
+ 347  0.016  0.213  0.126  0.088  0.081  0.264   0.1680558134
+ 356  0.016  0.213  0.130  0.088  0.081  0.264   0.1680495458
+ 357  0.016  0.213  0.129  0.088  0.081  0.264   0.1680487678
+ 381  0.016  0.213  0.129  0.088  0.085  0.264   0.1680467788
+ 382  0.016  0.213  0.129  0.088  0.084  0.264   0.1680466646
+ 398  0.021  0.212  0.133  0.088  0.087  0.264   0.1680437116
+ 431  0.019  0.213  0.131  0.088  0.084  0.264   0.1680429396
+ 445  0.019  0.213  0.131  0.087  0.084  0.264   0.1680427294
+ 454  0.019  0.213  0.131  0.087  0.087  0.264   0.1680404994
+Powell done niters = 5
+Computing relative cost
+ 0  -25.0 -25.0 -25.0   0.990106
+ 1  -25.0 -25.0  25.0   1.036382
+ 2  -25.0  25.0 -25.0   1.002849
+ 3  -25.0  25.0  25.0   1.026389
+ 4   25.0 -25.0 -25.0   0.992522
+ 5   25.0 -25.0  25.0   0.989306
+ 6   25.0  25.0 -25.0   1.006822
+ 7   25.0  25.0  25.0   1.015460
+REL:  8  0.168040    8.059836  1.007480 rel = 0.166793 
+Number of iterations     5
+Min cost was 0.168040
+Number of FunctionCalls   469
+TolPowell 0.000100
+nMaxItersPowell 36
+OptimizationTime 1.797000 sec
+Parameters at optimum (transmm)  0.01896  0.21317  0.13132
+Parameters at optimum (rotdeg)  0.08677  0.08716  0.26369 
+Final costs ----------------
+Number of surface hits 2670
+WM  Intensity  4837.5031 +/- 787.8065
+Ctx Intensity  6020.1381 +/- 984.2896
+Pct Contrast     21.3262 +/-  18.6416
+Cost   0.1680
+RelCost   0.1789
+Reg at min cost was 
+ 1.000  -0.005   0.002   0.019;
+ 0.005   1.000  -0.002   0.213;
+-0.002   0.002   1.000   0.131;
+ 0.000   0.000   0.000   1.000;
+
+Writing optimal reg to /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/tmp.bbregister.23316/bbr.pass1.dat, type = 14 
+Original Reg 
+ 1.000   0.000   0.000   0.000;
+ 0.000   1.000   0.000   0.000;
+ 0.000   0.000   1.000   0.000;
+ 0.000   0.000   0.000   1.000;
+
+Original Reg - Optimal Reg
+ 0.000   0.005  -0.002  -0.019;
+-0.005   0.000   0.002  -0.213;
+ 0.002  -0.002   0.000  -0.131;
+ 0.000   0.000   0.000   0.000;
+
+Computing change in lh position
+LH rmsDiffMean 0.246383
+Computing change in rh position
+Surface RMS Diff (mm) 0.315742 0.547028
+mri_segreg done
+mri_segreg --mov /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/tmp.bbregister.23316/template.nii --init-reg /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/tmp.bbregister.23316/bbr.pass1.dat --out-reg /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/EPItoT1w.dat --brute -0.1 0.1 0.1 --interp trilinear --wm-proj-abs 2 --tol 1e-8 --tol1d 1e-3 --c0 0 --mincost /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/EPItoT1w.dat.mincost --dof 6 --nmax 36 --param /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/EPItoT1w.dat.param --surf white.deformed --cur-reg /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/tmp.bbregister.23316/reg.curopt.dat --gm-proj-frac 0.5 --nsub 1 --o /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/Scout_gdc_undistorted2T1w.nii.gz --gm-gt-wm 0.5
+$Id: mri_segreg.c,v 1.103.2.1 2011/10/07 19:14:42 greve Exp $
+setenv SUBJECTS_DIR /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/T1w
+cd /home/ccp_hcp/CCP_HCP/source_ccp/batch_scripts
+mri_segreg --mov /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/tmp.bbregister.23316/template.nii --init-reg /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/tmp.bbregister.23316/bbr.pass1.dat --out-reg /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/EPItoT1w.dat --brute -0.1 0.1 0.1 --interp trilinear --wm-proj-abs 2 --tol 1e-8 --tol1d 1e-3 --c0 0 --mincost /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/EPItoT1w.dat.mincost --dof 6 --nmax 36 --param /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/EPItoT1w.dat.param --surf white.deformed --cur-reg /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/tmp.bbregister.23316/reg.curopt.dat --gm-proj-frac 0.5 --nsub 1 --o /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/Scout_gdc_undistorted2T1w.nii.gz --gm-gt-wm 0.5 
+sysname  Linux
+hostname node167
+machine  x86_64
+user     ccp_hcp
+movvol /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/tmp.bbregister.23316/template.nii
+regfile /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/tmp.bbregister.23316/bbr.pass1.dat
+subject ST005
+dof 6
+outregfile /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/EPItoT1w.dat
+outfile /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/Scout_gdc_undistorted2T1w.nii.gz
+UseMask 0
+UseLH 1
+UseRH 1
+nsubsamp 1
+PenaltySign  -1
+PenaltySlope 0.500000
+PenaltyCenter 0.000000
+surfname white.deformed
+GMProjFrac 0.500000
+WMProjAbs 2.000000
+lhcostfile (null)
+rhcostfile (null)
+interp  trilinear (1)
+frame  0
+TolPowell 0.000000
+nMaxItersPowell 36
+n1dmin  3
+Profile   0
+Gdiag_no  -1
+AddNoise  0 (0)
+SynthSeed 1441582221
+TransRandMax 0.000000
+RotRandMax 0.000000
+Translations 0.000000 0.000000 0.000000
+Rotations   0.000000 0.000000 0.000000
+Input reg
+ 1.000  -0.005   0.002   0.019;
+ 0.005   1.000  -0.002   0.213;
+-0.002   0.002   1.000   0.131;
+ 0.000   0.000   0.000   1.000;
+
+Loading mov
+Projecting LH Surfs
+Loading lh.white.deformed surf
+Loading lh.thickness for GM
+GM Proj: 1 0.500000 2.000000
+WM Proj: 0 0.500000 2.000000
+Projecting RH Surfs
+Loading rh.white.deformed surf
+Loading rh.thickness
+Projecting RH Surfs
+Computing relative cost
+ 0  -25.0 -25.0 -25.0   1.006693
+ 1  -25.0 -25.0  25.0   1.023104
+ 2  -25.0  25.0 -25.0   0.999983
+ 3  -25.0  25.0  25.0   0.992431
+ 4   25.0 -25.0 -25.0   1.001653
+ 5   25.0 -25.0  25.0   0.990970
+ 6   25.0  25.0 -25.0   1.017377
+ 7   25.0  25.0  25.0   1.009279
+REL:  8  0.174834    8.041490  1.005186 rel = 0.173932 
+Initial costs ----------------
+Number of surface hits 266689
+WM  Intensity  4844.8429 +/- 786.5574
+Ctx Intensity  6027.5144 +/- 984.7353
+Pct Contrast     21.2898 +/-  18.4790
+Cost   0.1748
+RelCost   0.1739
+
+------------------------------------
+Brute force preopt -0.1 0.1 0.1, n = 729
+     0  -0.1000  -0.1000  -0.1000  -0.1000  -0.1000  -0.1000      0.1753   0.1753  0.0
+     3  -0.1000  -0.1000  -0.1000  -0.1000   0.0000  -0.1000      0.1714   0.1714  0.0
+    30  -0.1000  -0.1000   0.0000  -0.1000   0.0000  -0.1000      0.1688   0.1688  0.0
+   273   0.0000  -0.1000   0.0000  -0.1000   0.0000  -0.1000      0.1680   0.1680  0.0
+   274   0.0000  -0.1000   0.0000  -0.1000   0.0000   0.0000      0.1679   0.1679  0.0
+   277   0.0000  -0.1000   0.0000  -0.1000   0.1000   0.0000      0.1674   0.1674  0.0
+Brute Force --------------------------
+Min cost was 0.167408
+Number of iterations   729
+Search time 2.792000 sec
+Parameters at best (transmm, rotdeg)
+  0.000  -0.100   0.000 -0.100  0.100  0.000 
+--------------------------------------------
+
+Starting Powell Minimization
+Init Powel Params dof = 6
+0 0
+1 -0.1
+2 0
+3 -0.1
+4 0.1
+5 0
+   7 -0.041 -0.100  0.000 -0.100  0.100  0.000   0.1748746618
+   8 -0.044 -0.100  0.000 -0.100  0.100  0.000   0.1748744712
+  10 -0.043 -0.100  0.000 -0.100  0.100  0.000   0.1748743445
+  17 -0.043 -0.147  0.000 -0.100  0.100  0.000   0.1745314260
+  19 -0.043 -0.154  0.000 -0.100  0.100  0.000   0.1745258317
+  20 -0.043 -0.153  0.000 -0.100  0.100  0.000   0.1745258262
+  28 -0.043 -0.153  0.024 -0.100  0.100  0.000   0.1743610459
+  29 -0.043 -0.153  0.040 -0.100  0.100  0.000   0.1743271828
+  30 -0.043 -0.153  0.042 -0.100  0.100  0.000   0.1743267137
+  31 -0.043 -0.153  0.043 -0.100  0.100  0.000   0.1743266927
+  39 -0.043 -0.153  0.043 -0.094  0.100  0.000   0.1742945553
+  40 -0.043 -0.153  0.043 -0.072  0.100  0.000   0.1742377776
+  42 -0.043 -0.153  0.043 -0.069  0.100  0.000   0.1742377614
+  44 -0.043 -0.153  0.043 -0.070  0.100  0.000   0.1742375292
+  45 -0.043 -0.153  0.043 -0.071  0.100  0.000   0.1742372860
+  52 -0.043 -0.153  0.043 -0.071 -0.069  0.000   0.1715266368
+  53 -0.043 -0.153  0.043 -0.071 -0.065  0.000   0.1715214347
+  54 -0.043 -0.153  0.043 -0.071 -0.059  0.000   0.1715181464
+  55 -0.043 -0.153  0.043 -0.071 -0.060  0.000   0.1715180751
+  63 -0.043 -0.153  0.043 -0.071 -0.060 -0.246   0.1682304704
+  64 -0.043 -0.153  0.043 -0.071 -0.060 -0.245   0.1682278081
+  65 -0.043 -0.153  0.043 -0.071 -0.060 -0.229   0.1682050809
+  67 -0.043 -0.153  0.043 -0.071 -0.060 -0.219   0.1682033158
+  68 -0.043 -0.153  0.043 -0.071 -0.060 -0.222   0.1682025625
+  78 -0.052 -0.153  0.043 -0.071 -0.060 -0.222   0.1681954298
+  79 -0.051 -0.153  0.043 -0.071 -0.060 -0.222   0.1681951768
+  87 -0.051 -0.125  0.043 -0.071 -0.060 -0.222   0.1681290785
+  88 -0.051 -0.127  0.043 -0.071 -0.060 -0.222   0.1681270149
+  89 -0.051 -0.129  0.043 -0.071 -0.060 -0.222   0.1681262200
+  98 -0.051 -0.129 -0.003 -0.071 -0.060 -0.222   0.1680576734
+  99 -0.051 -0.129  0.013 -0.071 -0.060 -0.222   0.1680139573
+ 100 -0.051 -0.129  0.014 -0.071 -0.060 -0.222   0.1680137276
+ 108 -0.051 -0.129  0.014 -0.083 -0.060 -0.222   0.1680132278
+ 109 -0.051 -0.129  0.014 -0.077 -0.060 -0.222   0.1680076240
+ 118 -0.051 -0.129  0.014 -0.077 -0.085 -0.222   0.1679700980
+ 119 -0.051 -0.129  0.014 -0.077 -0.080 -0.222   0.1679654105
+ 120 -0.051 -0.129  0.014 -0.077 -0.079 -0.222   0.1679650601
+ 129 -0.051 -0.129  0.014 -0.077 -0.079 -0.240   0.1679464552
+ 131 -0.051 -0.129  0.014 -0.077 -0.079 -0.239   0.1679464243
+ 141 -0.054 -0.129  0.014 -0.077 -0.079 -0.239   0.1679464015
+ 143 -0.053 -0.129  0.014 -0.077 -0.079 -0.239   0.1679462090
+ 151 -0.053 -0.125  0.014 -0.077 -0.079 -0.239   0.1679427875
+ 161 -0.053 -0.125  0.012 -0.077 -0.079 -0.239   0.1679418724
+ 162 -0.053 -0.125  0.011 -0.077 -0.079 -0.239   0.1679418705
+ 171 -0.053 -0.125  0.011 -0.078 -0.079 -0.239   0.1679417498
+ 180 -0.053 -0.125  0.011 -0.078 -0.080 -0.239   0.1679415350
+ 181 -0.053 -0.125  0.011 -0.078 -0.081 -0.239   0.1679415292
+ 190 -0.053 -0.125  0.011 -0.078 -0.081 -0.242   0.1679407711
+ 209 -0.053 -0.124  0.011 -0.078 -0.081 -0.242   0.1679405926
+ 245 -0.053 -0.124  0.011 -0.078 -0.081 -0.243   0.1679405710
+ 254 -0.053 -0.123  0.011 -0.078 -0.081 -0.243   0.1679405678
+ 262 -0.053 -0.124  0.011 -0.078 -0.081 -0.243   0.1679405665
+ 271 -0.054 -0.124  0.011 -0.078 -0.081 -0.243   0.1679404876
+ 281 -0.054 -0.124  0.011 -0.078 -0.081 -0.244   0.1679404753
+ 317 -0.054 -0.123  0.011 -0.078 -0.081 -0.244   0.1679404727
+ 318 -0.054 -0.123  0.011 -0.078 -0.081 -0.244   0.1679404660
+ 320 -0.054 -0.123  0.011 -0.078 -0.081 -0.244   0.1679404631
+Powell done niters = 5
+Computing relative cost
+ 0  -25.0 -25.0 -25.0   1.005771
+ 1  -25.0 -25.0  25.0   1.022682
+ 2  -25.0  25.0 -25.0   1.000723
+ 3  -25.0  25.0  25.0   0.991448
+ 4   25.0 -25.0 -25.0   1.003072
+ 5   25.0 -25.0  25.0   0.991935
+ 6   25.0  25.0 -25.0   1.018135
+ 7   25.0  25.0  25.0   1.010177
+REL:  8  0.167940    8.043944  1.005493 rel = 0.167023 
+Number of iterations     5
+Min cost was 0.167940
+Number of FunctionCalls   390
+TolPowell 0.000000
+nMaxItersPowell 36
+OptimizationTime 42.876000 sec
+Parameters at optimum (transmm) -0.05446 -0.12344  0.01132
+Parameters at optimum (rotdeg) -0.07823 -0.08067 -0.24422 
+Final costs ----------------
+Number of surface hits 266689
+WM  Intensity  4833.4255 +/- 784.3465
+Ctx Intensity  6024.0296 +/- 986.8682
+Pct Contrast     21.4524 +/-  18.3458
+Cost   0.1679
+RelCost   0.1739
+Reg at min cost was 
+ 1.000  -0.000   0.000  -0.035;
+ 0.000   1.000  -0.000   0.090;
+-0.000   0.000   1.000   0.142;
+ 0.000   0.000   0.000   1.000;
+
+Writing optimal reg to /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/EPItoT1w.dat, type = 14 
+Writing output volume to /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/Scout_gdc_undistorted2T1w.nii.gz 
+Original Reg 
+ 1.000  -0.005   0.002   0.019;
+ 0.005   1.000  -0.002   0.213;
+-0.002   0.002   1.000   0.131;
+ 0.000   0.000   0.000   1.000;
+
+Original Reg - Optimal Reg
+-0.000  -0.004   0.001   0.054;
+ 0.004  -0.000  -0.001   0.123;
+-0.001   0.001  -0.000  -0.011;
+ 0.000   0.000   0.000   0.000;
+
+Computing change in lh position
+LH rmsDiffMean 0.151026
+Computing change in rh position
+Surface RMS Diff (mm) 0.220075 0.488596
+mri_segreg done
+Cleaning up
+ 
+Started at Tue Sep 1 16:48:34 CDT 2015 
+Ended   at Tue Sep  1 16:49:49 CDT 2015
+BBR-Run-Time-Sec 75
+ 
+bbregister Done
+To check results, run:
+tkregister2 --mov /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/Scout_gdc_undistorted2T1w_init.nii.gz --reg /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/EPItoT1w.dat --surf
+ 
+Tue Sep 1 16:49:49 CDT 2015 - DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased.sh - Create FSL-style matrix and then combine with existing warp fields
+tkregister_tcl /export/freesurfer-5.3-HCP/tktools/tkregister2.tcl
+target  volume /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/T1w/T1w_acpc_dc.nii.gz
+movable volume /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/Scout_gdc_undistorted2T1w_init.nii.gz
+reg file       /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/EPItoT1w.dat
+LoadVol        0
+ZeroCRAS       0
+$Id: tkregister2.c,v 1.121.2.1 2011/03/28 20:25:16 greve Exp $
+Diagnostic Level -1
+---- Input registration matrix --------
+ 1.000  -0.000   0.000  -0.035;
+ 0.000   1.000  -0.000   0.090;
+-0.000   0.000   1.000   0.142;
+ 0.000   0.000   0.000   1.000;
+float2int = 0
+---------------------------------------
+INFO: loading target /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/T1w/T1w_acpc_dc.nii.gz
+INFO: target does not conform to COR format, so I'm going to
+reslice to COR. This will not affect the final registration.
+Ttarg: --------------------
+-1.000   0.000   0.000   128.000;
+ 0.000   0.000   1.000  -128.000;
+ 0.000  -1.000   0.000   128.000;
+ 0.000   0.000   0.000   1.000;
+INFO: loading movable /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/Scout_gdc_undistorted2T1w_init.nii.gz
+Tmov: --------------------
+-0.700   0.000   0.000   91.000;
+ 0.000   0.000   0.700  -91.000;
+ 0.000  -0.700   0.000   108.850;
+ 0.000   0.000   0.000   1.000;
+mkheaderreg = 0, float2int = 0
+---- Input registration matrix --------
+ 1.000  -0.000  -0.000  -0.035;
+ 0.000   0.000   1.000   0.090;
+-0.000  -1.000   0.000   0.142;
+ 0.000   0.000   0.000   1.000;
+Determinant 1
+subject = ST005
+RegMat ---------------------------
+ 1.000  -0.000   0.000  -0.035;
+ 0.000   1.000  -0.000   0.090;
+-0.000   0.000   1.000   0.142;
+ 0.000   0.000   0.000   1.000;
+FSLOUTPUTTYPE NIFTI_GZ 
+tkreg2FSL: mov det = -0.343, ref det = -0.343
+Tue Sep 1 16:51:11 CDT 2015 - DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased.sh - Create warped image with spline interpolation, bias correction and (optional) Jacobian modulation
+Tue Sep 1 16:51:34 CDT 2015 - DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased.sh - not applying Jacobian modulation
+Tue Sep 1 16:51:40 CDT 2015 - DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased.sh - cp /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/Scout_gdc_undistorted2T1w.nii.gz /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/Scout2T1w.nii.gz
+Tue Sep 1 16:51:40 CDT 2015 - DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased.sh - cp /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/fMRI2str.nii.gz /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/T1w/xfms/tfMRI_BOLD3_RL2str.nii.gz
+Tue Sep 1 16:51:40 CDT 2015 - DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased.sh - cp /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/Jacobian2T1w.nii.gz /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/Jacobian.nii.gz
+Tue Sep 1 16:51:40 CDT 2015 - DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased.sh - generating QA image (sqrt of EPI 01_wrapper.sh 02_dcm2nii.sh ccp_dcm2nii_batch.sh ccp_FS_batch.sh ccp_postFS_batch.sh ccp_preFS_batch.sh ccp_surface_batch.sh ccp_volume_batch.sh interactive_01_wrapper.sh interactive_02_dcm2nii.sh outfile_stroop.log stroop005.batch stroop005.cfg stroop005_outputs_dcm2nii stroop005_outputs_fs stroop005_outputs_postfs stroop005_outputs_prefs stroop005_outputs_volume T1w)
+Tue Sep 1 16:51:46 CDT 2015 - DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased.sh - END
+Tue Sep 1 16:51:46 CDT 2015 - GenericfMRIVolumeProcessingPipeline.sh - One Step Resampling
+Tue Sep 1 16:51:46 CDT 2015 - GenericfMRIVolumeProcessingPipeline.sh - mkdir -p /BlueArc-scratch/ramirezc/DATA_CCP/Stroop_005/NIFTI/ST005/tfMRI_BOLD3_RL/OneStepResampling
+ 
+ START: OneStepResampling
